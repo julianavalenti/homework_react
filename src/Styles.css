@@ -1,0 +1,48 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav analysis rating number"
+      "nav visitors visitors visitors"
+      ". . . .";
+      margin:10px;
+      
+  }
+  
+  .nav { 
+    grid-area: nav;
+    background-color: rgb(234, 228, 228)
+
+     }
+  
+  .analysis { 
+    grid-area: analysis; 
+    font-family: 'Comic Neue', cursive;
+    background-color: rgb(234, 228, 228) ;
+}
+  
+  .rating { 
+    grid-area: rating;
+    font-family: 'Comic Neue', cursive; 
+    background-color: rgb(234, 228, 228)}
+  
+  .number { 
+    grid-area: number;
+    font-family: 'Comic Neue', cursive;
+    background-color: rgb(234, 228, 228) }
+  
+  .visitors { 
+    grid-area: visitors; 
+    font-family: 'Comic Neue', cursive;
+    background-color: rgb(234, 228, 228)}
+  
+  .nav a {
+    text-decoration: none;
+   padding: 20px;
+   margin: 80px;
+    font-family: 'Comic Neue', cursive;
+    
+    
+  }
